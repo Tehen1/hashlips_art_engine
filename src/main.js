@@ -1,4 +1,5 @@
-const basePath = process.cwd();
+const basePath = path.resolve(process.cwd());
+console.log('Base path is', basePath);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 const fs = require("fs");
 const sha1 = require(`${basePath}/node_modules/sha1`);
